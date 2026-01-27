@@ -1,0 +1,125 @@
+body{
+  margin:0;
+  height:100vh;
+  background:#0a0f1f;
+  overflow:hidden;
+  font-family: Arial, sans-serif;
+  color:#fff;
+}
+
+/* GRID */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size:40px 40px;
+  z-index:-2;
+}
+
+/* CANVAS */
+#bg{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+}
+
+/* TOP BAR */
+.top{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  z-index:999;
+}
+
+.top input, .top textarea{
+  background:#0e223f;
+  border:none;
+  outline:none;
+  color:white;
+  padding:8px;
+  border-radius:8px;
+}
+
+.top textarea{
+  resize:none;
+  height:40px;
+}
+
+.top button{
+  padding:10px 14px;
+  border-radius:10px;
+  border:1px solid #00ff88;
+  background:transparent;
+  color:#00ff88;
+  cursor:pointer;
+  box-shadow:0 0 15px #00ff88;
+  transition:.3s;
+}
+.top button:hover{
+  box-shadow:0 0 30px #00ff88;
+  transform:translateY(-2px);
+}
+
+/* NOTE */
+.note{
+  position:absolute;
+  width:220px;
+  padding:14px;
+  border-radius:12px;
+  background:#0e223f;
+  cursor:grab;
+  transition:.3s;
+  box-shadow:
+    0 0 0 transparent,
+    0 15px 30px rgba(0,255,136,.35);
+}
+.note::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-8px;
+  height:8px;
+  background:radial-gradient(ellipse at center, rgba(0,255,136,.7), transparent 70%);
+}
+.note:hover{
+  transform:scale(1.05);
+  box-shadow:
+    0 0 25px rgba(0,255,136,.9),
+    0 20px 40px rgba(0,255,136,.4);
+}
+
+.note.hidden{
+  display:none;
+}
+
+.note h3{margin:0 0 6px;}
+.note p{font-size:13px;opacity:.9}
+
+/* BUTTONS */
+.actions{
+  display:flex;
+  gap:6px;
+  margin-top:10px;
+}
+.actions button{
+  flex:1;
+  padding:6px;
+  background:transparent;
+  border:1px solid #00ff88;
+  color:#00ff88;
+  border-radius:6px;
+  cursor:pointer;
+  box-shadow:0 0 10px rgba(0,255,136,.6);
+  transition:.3s;
+}
+.actions button:hover{
+  box-shadow:0 0 20px #00ff88;
+  transform:translateY(-2px);
+}
