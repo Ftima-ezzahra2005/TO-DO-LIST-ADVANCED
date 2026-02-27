@@ -25,6 +25,10 @@ Interface principale qui affiche toutes les tâches avec possibilité d’ajout,
 
 Ajout et déplacement des tâches (Drag & Drop To-Do) 
 
+![Aperçu](liste de tâches avancée(2).png)
+
+Fermeture d’une tâche (Close) 
+
 
 
 ## Objectif du projet
