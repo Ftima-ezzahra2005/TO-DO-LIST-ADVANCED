@@ -17,6 +17,13 @@ Application avancée de gestion des tâches avec des fonctionnalités interactiv
 
 ## Aperçu
 
+### Description:
+
+Interface principale qui affiche toutes les tâches avec possibilité d’ajout, et close et supression.
+
+![Aperçu](liste de tâches avancée(1).png)
+
+
 (حطي صورة هنا)
 
 ## Objectif du projet
