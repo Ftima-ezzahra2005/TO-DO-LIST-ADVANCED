@@ -29,7 +29,17 @@ Ajout et déplacement des tâches (Drag & Drop To-Do)
 
 Fermeture d’une tâche (Close) 
 
+![Aperçu](fermiture(1).png)
 
+![Aperçu](tache fermée(2).png)
+
+Affichage des tâches fermées (Show Closed)
+
+![Aperçu](show closed.png)
+
+Suppression d’une tâche (Remove) 
+
+![Aperçu](remove.png)
 
 ## Objectif du projet
 Développer mes compétences en JavaScript et en développement front-end.
